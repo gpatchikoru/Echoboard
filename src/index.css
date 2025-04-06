@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: sans-serif;
+  background-color: #FFFBEB; /* Equivalent to bg-yellow-50 */
+  color: #5F370E; /* Equivalent to text-brown-800 */
+
+}
