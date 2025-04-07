@@ -26,7 +26,12 @@ export default function MemoryPage() {
   };
 
   const speakText = (text) => {
+    if (!text || text.trim() === '') return;
     const utterance = new SpeechSynthesisUtterance(text);
+    utterance.rate = 1;
+    utterance.pitch = 1;
+    utterance.volume = 1;
+    speechSynthesis.cancel();
     speechSynthesis.speak(utterance);
   };
 

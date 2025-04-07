@@ -1,4 +1,3 @@
-// src/App.jsx
 import React, { useState, useEffect, useRef } from 'react';
 import BookCover from './components/BookCover';
 import BookLayout from './components/BookLayout';
@@ -15,6 +14,7 @@ export default function App() {
 
   useEffect(() => {
     if (ambientRef.current) {
+      ambientRef.current.volume = 0.05;
       if (ambientOn && isOpen) {
         ambientRef.current.play().catch(() => {});
       } else {

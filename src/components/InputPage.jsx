@@ -1,4 +1,3 @@
-// src/components/InputPage.jsx
 import React, { useState, useRef, useEffect } from 'react';
 
 const emojiList = ['😀','😁','😂','😇','😍','😎','😢','😡','😴','🤯','😱','🥳'];
